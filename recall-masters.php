@@ -421,15 +421,14 @@ class Recall_Masters {
 						}
 						?>
 						<div class="panel panel-default">
-							<div class="panel-heading"><h3><?php _e( 'Recall', 'recall_masters' ); ?></h3></div>
+							<div class="panel-heading"><h3><?php _e( 'Recall', 'recall_masters' ); ?> - <?php echo $recall['name']; ?></h3></div>
 								<div class="panel-body">
-									<p><?php echo $recall['name']; ?></p>
 									<p><span class="label label-default"><?php _e( 'OEM Code', 'recall_masters' ); ?>:</span> <?php echo $recall['oem_id']; ?></p>
 									<p><span class="label label-default"><?php _e( 'NHTSA Code', 'recall_masters' ); ?>:</span> <?php echo $recall['nhtsa_id']; ?></p>
 									<p><span class="label label-default"><?php _e( 'Description', 'recall_masters' ); ?>:</span> <?php echo $recall['description']; ?></p>
 									<p><span class="label <?php echo $label_class; ?>"><?php _e( 'Severity', 'recall_masters' ); ?>:</span> <?php echo $recall['risk_rank']; ?></p>
 									<hr />
-									<h4>Remedy:</h4>
+									<h4><?php _e( 'Remedy', 'recall_masters' ); ?>:</h4>
 									<p><?php echo $recall['remedy']; ?></p>
 								</div>
 						</div>
