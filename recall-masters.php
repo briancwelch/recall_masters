@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Recall Masters
  * Plugin URI:        http://digitalcliq.com
- * Description:       A WordPress plugin that checks the RecallMasters API.	Built for DigitalCLIQ.
+ * Description:       A WordPress plugin that checks the RecallMasters API. Built for DigitalCLIQ.
  * Version:           1.0.1
  * Author:            Brian C. Welch
  * Author URI:        http://briancwelch.com
@@ -59,20 +59,20 @@ class Recall_Masters {
 		if ( ! defined( 'RECALL_MASTERS_URL' ) ) { define( 'RECALL_MASTERS_URL', plugin_dir_url( __FILE__ ) ); }
 
 		// Add actions.
-		add_action( 'plugins_loaded', array( $this, 'translations' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'scripts' ) );
-		add_action( 'admin_menu',	array( $this, 'recall_masters_add_admin_menu' ) );
-		add_action( 'admin_init',	array( $this, 'recall_masters_settings_init' ) );
+		add_action( 'plugins_loaded',      array( $this, 'translations' ) );
+		add_action( 'wp_enqueue_scripts',  array( $this, 'scripts' ) );
+		add_action( 'admin_menu',          array( $this, 'recall_masters_add_admin_menu' ) );
+		add_action( 'admin_init',          array( $this, 'recall_masters_settings_init' ) );
 
 		// Add filters.
 		add_filter( 'mce_external_plugins', array( $this, 'add_tinymce_form_button' ) );
 		add_filter( 'mce_external_plugins', array( $this, 'add_tinymce_results_button' ) );
-		add_filter( 'mce_buttons', array( $this, 'register_tinymce_form_button' ) );
-		add_filter( 'mce_buttons', array( $this, 'register_tinymce_results_button' ) );
+		add_filter( 'mce_buttons',          array( $this, 'register_tinymce_form_button' ) );
+		add_filter( 'mce_buttons',          array( $this, 'register_tinymce_results_button' ) );
 
 		// Add shortcodes.
-		add_shortcode( 'recall_form', array( $this, 'recall_form_shortcode' ) );
-		add_shortcode( 'recall_results', array( $this, 'recall_results_shortcode' ) );
+		add_shortcode( 'recall_form',       array( $this, 'recall_form_shortcode' ) );
+		add_shortcode( 'recall_results',    array( $this, 'recall_results_shortcode' ) );
 
 	}
 
@@ -435,7 +435,6 @@ class Recall_Masters {
 
 		?>
 		<div class="well">
-			<!--<pre><?php //print_r( $recall_data_array ); ?></pre>-->
 			<table class="table table-condensed table-hover">
 				 <thead>
 						<tr>
