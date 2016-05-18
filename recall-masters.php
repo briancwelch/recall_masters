@@ -245,7 +245,6 @@ class Recall_Masters {
 		<?php
 	}
 
-
 	/**
 	 * Add input box to settings page.
 	 * @method recall_masters_text_field_1_render
@@ -293,9 +292,6 @@ class Recall_Masters {
 		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_5]' value='<?php echo $options['recall_masters_text_field_5']; ?>' placeholder='There are no current recalls for your vehicle.'>
 		<?php
 	}
-
-
-
 
 	/**
 	 * [recall_masters_settings_section_callback description]
@@ -365,7 +361,7 @@ class Recall_Masters {
 			'timeout'   => 5,
 			'sslverify' => true,
 			'headers'   => array(
-				'Authorization' => 'Token b88fdb6013de1b10701d2502abc24319fa3ef0bf',
+				'Authorization' => 'Token '.$options['recall_masters_text_field_1'].'',
 			),
 		);
 
