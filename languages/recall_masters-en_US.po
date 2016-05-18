@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Recall Masters\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Wed May 18 2016 00:53:30 GMT-0400 (Eastern Daylight Time)\n"
-"PO-Revision-Date: Wed May 18 2016 00:55:39 GMT-0400 (Eastern Daylight Time)\n"
+"PO-Revision-Date: Wed May 18 2016 13:56:42 GMT-0400 (Eastern Daylight Time)\n"
 "Last-Translator: administrator <null@carbon.local>\n"
 "Language-Team: \n"
 "Language: English\n"
@@ -22,6 +22,38 @@ msgstr ""
 "X-Loco-Target-Locale: en_US\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#. Description of the plugin
+msgid "A WordPress plugin that checks the RecallMasters API.	Built for DigitalCLIQ."
+msgstr "A WordPress plugin that checks the RecallMasters API.	Built for DigitalCLIQ."
+
+#: ../recall-masters.php:223
+msgid "Plugin Settings"
+msgstr "Plugin Settings"
+
+#: ../recall-masters.php:462
+msgid "Remedy"
+msgstr "Remedy"
+
+#: ../recall-masters.php:464
+msgid "Repair Information"
+msgstr "Repair Information"
+
+#: ../recall-masters.php:465
+msgid "Parts Availability"
+msgstr "Parts Availability"
+
+#: ../recall-masters.php:466
+msgid "Repair Difficulty (1-5)"
+msgstr "Repair Difficulty (1-5)"
+
+#: ../recall-masters.php:467
+msgid "Estimated Repair Time"
+msgstr "Estimated Repair Time"
+
+#: ../recall-masters.php:467
+msgid "hour(s)"
+msgstr "hour(s)"
+
 #. Name of the plugin
 msgid "Recall Masters"
 msgstr "Recall Masters"
@@ -29,10 +61,6 @@ msgstr "Recall Masters"
 #. URI of the plugin
 msgid "http://digitalcliq.com"
 msgstr "http://digitalcliq.com"
-
-#. Description of the plugin
-msgid "A WordPress plugin that checks the RecallMasters API.  Built for DigitalCLIQ."
-msgstr "A WordPress plugin that checks the RecallMasters API.  Built for DigitalCLIQ."
 
 #. Author of the plugin
 msgid "Brian C. Welch"
@@ -42,35 +70,31 @@ msgstr "Brian C. Welch"
 msgid "http://briancwelch.com"
 msgstr "http://briancwelch.com"
 
-#: ../recall-masters.php:172
-msgid "Recall Results Plugin Settings"
-msgstr "Recall Results Plugin Settings"
-
-#: ../recall-masters.php:178
+#: ../recall-masters.php:229
 msgid "Recall Results Page:"
 msgstr "Recall Results Page:"
 
-#: ../recall-masters.php:185
+#: ../recall-masters.php:236
 msgid "API Token:"
 msgstr "API Token:"
 
-#: ../recall-masters.php:192
+#: ../recall-masters.php:243
 msgid "Form Header:"
 msgstr "Form Header:"
 
-#: ../recall-masters.php:199
+#: ../recall-masters.php:250
 msgid "Form Description:"
 msgstr "Form Description:"
 
-#: ../recall-masters.php:206
+#: ../recall-masters.php:257
 msgid "Active Recall Note:"
 msgstr "Active Recall Note:"
 
-#: ../recall-masters.php:213
+#: ../recall-masters.php:264
 msgid "Inactive Recall Note:"
 msgstr "Inactive Recall Note:"
 
-#: ../recall-masters.php:306
+#: ../recall-masters.php:353
 msgid ""
 "Here you will find a few options to set for the Recall Masters plugin, such "
 "as the results page, API token, and text verbiage."
@@ -78,42 +102,38 @@ msgstr ""
 "Here you will find a few options to set for the Recall Masters plugin, such "
 "as the results page, API token, and text verbiage."
 
-#: ../recall-masters.php:341 ../recall-masters.php:385
+#: ../recall-masters.php:389 ../recall-masters.php:435
 msgid "Vehicle Identification Number"
 msgstr "Vehicle Identification Number"
 
-#: ../recall-masters.php:345
+#: ../recall-masters.php:393
 msgid "Check Recall Status"
 msgstr "Check Recall Status"
 
-#: ../recall-masters.php:386
+#: ../recall-masters.php:436
 msgid "Year"
 msgstr "Year"
 
-#: ../recall-masters.php:387
+#: ../recall-masters.php:437
 msgid "Make"
 msgstr "Make"
 
-#: ../recall-masters.php:388
+#: ../recall-masters.php:438
 msgid "Model"
 msgstr "Model"
 
-#: ../recall-masters.php:428
+#: ../recall-masters.php:458
 msgid "Recall"
 msgstr "Recall"
 
-#: ../recall-masters.php:431
-msgid "OEM Code"
-msgstr "OEM COde"
-
-#: ../recall-masters.php:432
-msgid "NHTSA Code"
-msgstr "NHTSA Code"
-
-#: ../recall-masters.php:433
+#: ../recall-masters.php:460
 msgid "Description"
 msgstr "Description"
 
-#: ../recall-masters.php:434
-msgid "Severity"
-msgstr "Severity"
+#: ../recall-masters.php:469
+msgid "OEM Code"
+msgstr "OEM Code"
+
+#: ../recall-masters.php:469
+msgid "NHTSA Code"
+msgstr "NHTSA Code"

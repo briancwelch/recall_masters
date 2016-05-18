@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Recall Masters\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Wed May 18 2016 00:53:30 GMT-0400 (Eastern Daylight Time)\n"
-"POT-Revision-Date: Wed May 18 2016 00:55:49 GMT-0400 (Eastern Daylight Time)\n"
+"POT-Revision-Date: Wed May 18 2016 13:56:39 GMT-0400 (Eastern Daylight Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: administrator <null@carbon.local>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgid "http://digitalcliq.com"
 msgstr ""
 
 #. Description of the plugin
-msgid "A WordPress plugin that checks the RecallMasters API.  Built for DigitalCLIQ."
+msgid "A WordPress plugin that checks the RecallMasters API.	Built for DigitalCLIQ."
 msgstr ""
 
 #. Author of the plugin
@@ -45,76 +45,96 @@ msgstr ""
 msgid "http://briancwelch.com"
 msgstr ""
 
-#: ../recall-masters.php:172
-msgid "Recall Results Plugin Settings"
+#: ../recall-masters.php:223
+msgid "Plugin Settings"
 msgstr ""
 
-#: ../recall-masters.php:178
+#: ../recall-masters.php:229
 msgid "Recall Results Page:"
 msgstr ""
 
-#: ../recall-masters.php:185
+#: ../recall-masters.php:236
 msgid "API Token:"
 msgstr ""
 
-#: ../recall-masters.php:192
+#: ../recall-masters.php:243
 msgid "Form Header:"
 msgstr ""
 
-#: ../recall-masters.php:199
+#: ../recall-masters.php:250
 msgid "Form Description:"
 msgstr ""
 
-#: ../recall-masters.php:206
+#: ../recall-masters.php:257
 msgid "Active Recall Note:"
 msgstr ""
 
-#: ../recall-masters.php:213
+#: ../recall-masters.php:264
 msgid "Inactive Recall Note:"
 msgstr ""
 
-#: ../recall-masters.php:306
+#: ../recall-masters.php:353
 msgid ""
 "Here you will find a few options to set for the Recall Masters plugin, such "
 "as the results page, API token, and text verbiage."
 msgstr ""
 
-#: ../recall-masters.php:341 ../recall-masters.php:385
+#: ../recall-masters.php:389 ../recall-masters.php:435
 msgid "Vehicle Identification Number"
 msgstr ""
 
-#: ../recall-masters.php:345
+#: ../recall-masters.php:393
 msgid "Check Recall Status"
 msgstr ""
 
-#: ../recall-masters.php:386
+#: ../recall-masters.php:436
 msgid "Year"
 msgstr ""
 
-#: ../recall-masters.php:387
+#: ../recall-masters.php:437
 msgid "Make"
 msgstr ""
 
-#: ../recall-masters.php:388
+#: ../recall-masters.php:438
 msgid "Model"
 msgstr ""
 
-#: ../recall-masters.php:428
+#: ../recall-masters.php:458
 msgid "Recall"
 msgstr ""
 
-#: ../recall-masters.php:431
-msgid "OEM Code"
-msgstr ""
-
-#: ../recall-masters.php:432
-msgid "NHTSA Code"
-msgstr ""
-
-#: ../recall-masters.php:433
+#: ../recall-masters.php:460
 msgid "Description"
 msgstr ""
 
-#: ../recall-masters.php:434
-msgid "Severity"
+#: ../recall-masters.php:462
+msgid "Remedy"
+msgstr ""
+
+#: ../recall-masters.php:464
+msgid "Repair Information"
+msgstr ""
+
+#: ../recall-masters.php:465
+msgid "Parts Availability"
+msgstr ""
+
+#: ../recall-masters.php:466
+msgid "Repair Difficulty (1-5)"
+msgstr ""
+
+#: ../recall-masters.php:467
+msgid "Estimated Repair Time"
+msgstr ""
+
+#: ../recall-masters.php:467
+msgid "hour(s)"
+msgstr ""
+
+#: ../recall-masters.php:469
+msgid "OEM Code"
+msgstr ""
+
+#: ../recall-masters.php:469
+msgid "NHTSA Code"
 msgstr ""
