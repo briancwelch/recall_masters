@@ -284,9 +284,9 @@ class Recall_Masters {
 	function recall_masters_select_field_0_render() {
 		$options = get_option( 'recall_masters_settings' );
 		$args = array(
-				'selected'							=> $options['recall_masters_select_field_0'],
-				'echo'									=> 1,
-				'name'									=> 'recall_masters_settings[recall_masters_select_field_0]',
+				'selected' => $options['recall_masters_select_field_0'],
+				'echo'     => 1,
+				'name'     => 'recall_masters_settings[recall_masters_select_field_0]',
 		);
 		wp_dropdown_pages( $args );
 	}
