@@ -35,7 +35,7 @@ class Recall_Masters_TinyMCE {
 	 * @param	[type] $plugin_array [description].
 	 */
 	function add_tinymce_form_button( $plugin_array ) {
-		$plugin_array['recall_masters_form'] = plugins_url( '/assets/js/recall_form.js', __FILE__ );
+		$plugin_array['recall_masters_form'] = plugins_url( '../assets/js/recall_form.js', __FILE__ );
 		return $plugin_array;
 	}
 
@@ -46,7 +46,7 @@ class Recall_Masters_TinyMCE {
 	 * @param	[type] $plugin_array [description].
 	 */
 	function add_tinymce_results_button( $plugin_array ) {
-		$plugin_array['recall_masters_results'] = plugins_url( '/assets/js/recall_results.js', __FILE__ );
+		$plugin_array['recall_masters_results'] = plugins_url( '../assets/js/recall_results.js', __FILE__ );
 		return $plugin_array;
 	}
 
