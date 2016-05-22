@@ -66,9 +66,9 @@ class Recall_Masters_Shortcodes {
 		$options = get_option( 'recall_masters_settings' );
 
 		$headers = array(
-			'timeout'	 => 5,
+			'timeout'   => 5,
 			'sslverify' => true,
-			'headers'	 => array(
+			'headers'   => array(
 				'Authorization' => 'Token ' . $options['recall_masters_text_field_1'] . '',
 			),
 		);
