@@ -120,7 +120,9 @@ class Recall_Masters_Shortcodes {
 									<p><?php esc_html_e( 'Repair Difficulty (1-5)', 'recall_masters' ); ?>: <?php esc_html_e( $recall['labor_difficulty'], 'recall_masters' ); ?></p>
 									<p><?php esc_html_e( 'Estimated Repair Time', 'recall_masters' ); ?>: <?php esc_html_e( $recall['labor_max'], 'recall_masters' ); ?> <?php esc_html_e( 'hour(s)', 'recall_masters' ); ?></p>
 								</div>
-								<div class="panel-footer"><span class="label label-primary"><?php esc_html_e( 'OEM Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['oem_id'], 'recall_masters' ); ?></span> / <span class="label label-primary"><?php esc_html_e( 'NHTSA Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['nhtsa_id'], 'recall_masters' ); ?></span></div>
+								<div class="panel-footer">
+									<span class="label label-primary"><?php esc_html_e( 'OEM Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['oem_id'], 'recall_masters' ); ?></span> / <span class="label label-primary"><?php esc_html_e( 'NHTSA Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['nhtsa_id'], 'recall_masters' ); ?></span>
+								</div>
 						</div>
 						<?php
 				}
