@@ -62,8 +62,8 @@ class Recall_Masters_Shortcodes {
 		ob_start();
 
 		$vin = wp_unslash( $_POST['vin'] );
-		$url = 'https://app.recallmasters.com/api/v1/lookup/' . $vin . '';
 		$options = get_option( 'recall_masters_settings' );
+		$url = 'https://app.recallmasters.com/api/v1/lookup/' . $vin . '/?format=json&user=' . $options['recall_masters_text_field_6'] . '';
 
 		$headers = array(
 			'timeout'   => 5,

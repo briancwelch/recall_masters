@@ -70,6 +70,13 @@ class Recall_Masters_Options {
 			'recall_masters_plugin_page_section'
 		);
 		add_settings_field(
+			'recall_masters_text_field_6',
+			__( 'API User:', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_6_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
+		add_settings_field(
 			'recall_masters_text_field_2',
 			__( 'Form Header:', 'recall_masters' ),
 			array( $this, 'recall_masters_text_field_2_render' ),
@@ -171,6 +178,18 @@ class Recall_Masters_Options {
 		$options = get_option( 'recall_masters_settings' );
 		?>
 		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_5]' value='<?php esc_html_e( $options['recall_masters_text_field_5'], 'recall_masters' ); ?>' placeholder='There are no current recalls for your vehicle.'>
+		<?php
+	}
+
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_6_render
+	 */
+	function recall_masters_text_field_6_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_6]' value='<?php esc_html_e( $options['recall_masters_text_field_6'], 'recall_masters' ); ?>' placeholder='Darth Vader'>
 		<?php
 	}
 

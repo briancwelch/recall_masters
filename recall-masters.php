@@ -3,7 +3,7 @@
  * Plugin Name:       Recall Masters
  * Plugin URI:        http://digitalcliq.com
  * Description:       A WordPress plugin that checks the RecallMasters API. Built for DigitalCLIQ.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Brian C. Welch
  * Author URI:        http://briancwelch.com
  * Requires at least: 4.0
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Definitions.
-if ( ! defined( 'RECALL_MASTERS_VER' ) ) { define( 'RECALL_MASTERS_FILE', '1.0.3' ); }
+if ( ! defined( 'RECALL_MASTERS_VER' ) ) { define( 'RECALL_MASTERS_FILE', '1.0.4' ); }
 if ( ! defined( 'RECALL_MASTERS_FILE' ) ) { define( 'RECALL_MASTERS_FILE', __FILE__ ); }
 if ( ! defined( 'RECALL_MASTERS_PATH' ) ) { define( 'RECALL_MASTERS_PATH', dirname( __FILE__ ) ); }
 if ( ! defined( 'RECALL_MASTERS_URL' ) ) { define( 'RECALL_MASTERS_URL', plugin_dir_url( __FILE__ ) ); }
