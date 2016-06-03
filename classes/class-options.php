@@ -104,6 +104,41 @@ class Recall_Masters_Options {
 			'plugin_page',
 			'recall_masters_plugin_page_section'
 		);
+		add_settings_field(
+			'recall_masters_text_field_7',
+			__( 'Repair Severity Text (Level 1):', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_7_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
+		add_settings_field(
+			'recall_masters_text_field_8',
+			__( 'Repair Severity Text (Level 2):', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_8_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
+		add_settings_field(
+			'recall_masters_text_field_9',
+			__( 'Repair Severity Text (Level 3):', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_9_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
+		add_settings_field(
+			'recall_masters_text_field_10',
+			__( 'Repair Severity Text (Level 4):', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_10_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
+		add_settings_field(
+			'recall_masters_text_field_11',
+			__( 'Repair Severity Text (Level 5):', 'recall_masters' ),
+			array( $this, 'recall_masters_text_field_11_render' ),
+			'plugin_page',
+			'recall_masters_plugin_page_section'
+		);
 	}
 
 	/**
@@ -192,6 +227,66 @@ class Recall_Masters_Options {
 		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_6]' value='<?php esc_html_e( $options['recall_masters_text_field_6'], 'recall_masters' ); ?>' placeholder='Darth Vader'>
 		<?php
 	}
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_7_render
+	 */
+	function recall_masters_text_field_7_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_7]' value='<?php esc_html_e( $options['recall_masters_text_field_7'], 'recall_masters' ); ?>' placeholder='Sticker'>
+		<?php
+	}
+
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_8_render
+	 */
+	function recall_masters_text_field_8_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_8]' value='<?php esc_html_e( $options['recall_masters_text_field_8'], 'recall_masters' ); ?>' placeholder='Nuisance'>
+		<?php
+	}
+
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_9_render
+	 */
+	function recall_masters_text_field_9_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_9]' value='<?php esc_html_e( $options['recall_masters_text_field_9'], 'recall_masters' ); ?>' placeholder='Programming Only'>
+		<?php
+	}
+
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_10_render
+	 */
+	function recall_masters_text_field_10_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_10]' value='<?php esc_html_e( $options['recall_masters_text_field_10'], 'recall_masters' ); ?>' placeholder='No Car Lift'>
+		<?php
+	}
+
+	/**
+	 * Add input box to settings page.
+	 *
+	 * @method recall_masters_text_field_11_render
+	 */
+	function recall_masters_text_field_11_render() {
+		$options = get_option( 'recall_masters_settings' );
+		?>
+		<input type='text' size='75' name='recall_masters_settings[recall_masters_text_field_11]' value='<?php esc_html_e( $options['recall_masters_text_field_11'], 'recall_masters' ); ?>' placeholder='Car Lift'>
+		<?php
+	}
+
 
 	/**
 	 * [recall_masters_settings_section_callback description]

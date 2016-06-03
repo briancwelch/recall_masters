@@ -107,24 +107,43 @@ class Recall_Masters_Shortcodes {
 				<div class="alert alert-danger" role="alert"><?php esc_html_e( $options['recall_masters_text_field_4'], 'recall_masters' ); ?></div>
 				<?php
 				foreach ( $recall_data_array['recalls'] as $recall ) {
-						?>
-						<div class="panel panel-default">
-							<div class="panel-heading"><h3><?php esc_html_e( 'Recall', 'recall_masters' ); ?> - <?php esc_html_e( $recall['name'] , 'recall_masters' ); ?></h3></div>
-								<div class="panel-body">
-									<h3><?php esc_html_e( 'Description', 'recall_masters' ); ?></h3><?php esc_html_e( $recall['description'], 'recall_masters' ); ?>
-									<hr />
-									<h4><?php esc_html_e( 'Remedy', 'recall_masters' ); ?></h4>
-									<p><?php esc_html_e( $recall['remedy'], 'recall_masters' ); ?></p>
-									<h4><?php esc_html_e( 'Repair Information', 'recall_masters' ); ?></h4>
-									<p><?php esc_html_e( 'Parts Availability', 'recall_masters' ); ?>: <?php esc_html_e( $recall['parts_available'], 'recall_masters' ); ?></p>
-									<p><?php esc_html_e( 'Repair Difficulty (1-5)', 'recall_masters' ); ?>: <?php esc_html_e( $recall['labor_difficulty'], 'recall_masters' ); ?></p>
-									<p><?php esc_html_e( 'Estimated Repair Time', 'recall_masters' ); ?>: <?php esc_html_e( $recall['labor_max'], 'recall_masters' ); ?> <?php esc_html_e( 'hour(s)', 'recall_masters' ); ?></p>
-								</div>
-								<div class="panel-footer">
-									<span class="label label-primary"><?php esc_html_e( 'OEM Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['oem_id'], 'recall_masters' ); ?></span> / <span class="label label-primary"><?php esc_html_e( 'NHTSA Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['nhtsa_id'], 'recall_masters' ); ?></span>
-								</div>
-						</div>
-						<?php
+					switch ( $recall['labor_difficulty'] ) {
+						case '1':
+							$labor_difficulty = $options['recall_masters_text_field_7'];
+							break;
+						case '2':
+							$labor_difficulty = $options['recall_masters_text_field_8'];
+							break;
+						case '3':
+							$labor_difficulty = $options['recall_masters_text_field_9'];
+							break;
+						case '4':
+							$labor_difficulty = $options['recall_masters_text_field_10'];
+							break;
+						case '5':
+							$labor_difficulty = $options['recall_masters_text_field_11'];
+							break;
+						default:
+							$labor_difficulty = null;
+					}
+					?>
+					<div class="panel panel-default">
+						<div class="panel-heading"><h3><?php esc_html_e( 'Recall', 'recall_masters' ); ?> - <?php esc_html_e( $recall['name'] , 'recall_masters' ); ?></h3></div>
+							<div class="panel-body">
+								<h3><?php esc_html_e( 'Description', 'recall_masters' ); ?></h3><?php esc_html_e( $recall['description'], 'recall_masters' ); ?>
+								<hr />
+								<h4><?php esc_html_e( 'Remedy', 'recall_masters' ); ?></h4>
+								<p><?php esc_html_e( $recall['remedy'], 'recall_masters' ); ?></p>
+								<h4><?php esc_html_e( 'Repair Information', 'recall_masters' ); ?></h4>
+								<p><?php esc_html_e( 'Parts Availability', 'recall_masters' ); ?>: <?php esc_html_e( $recall['parts_available'], 'recall_masters' ); ?></p>
+								<p><?php esc_html_e( 'Repair Difficulty', 'recall_masters' ); ?>: <?php esc_html_e( $labor_difficulty, 'recall_masters' ); ?></p>
+								<p><?php esc_html_e( 'Estimated Repair Time', 'recall_masters' ); ?>: <?php esc_html_e( $recall['labor_max'], 'recall_masters' ); ?> <?php esc_html_e( 'hour(s)', 'recall_masters' ); ?></p>
+							</div>
+							<div class="panel-footer">
+								<span class="label label-primary"><?php esc_html_e( 'OEM Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['oem_id'], 'recall_masters' ); ?></span> / <span class="label label-primary"><?php esc_html_e( 'NHTSA Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['nhtsa_id'], 'recall_masters' ); ?></span>
+							</div>
+					</div>
+					<?php
 				}
 			?>
 			<?php } else { ?>
