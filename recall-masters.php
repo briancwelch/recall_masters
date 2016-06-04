@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Definitions.
-if ( ! defined( 'RECALL_MASTERS_VER' ) ) { define( 'RECALL_MASTERS_FILE', '1.0.6' ); }
+if ( ! defined( 'RECALL_MASTERS_VER' ) ) { define( 'RECALL_MASTERS_VER', '1.0.6' ); }
 if ( ! defined( 'RECALL_MASTERS_FILE' ) ) { define( 'RECALL_MASTERS_FILE', __FILE__ ); }
 if ( ! defined( 'RECALL_MASTERS_PATH' ) ) { define( 'RECALL_MASTERS_PATH', dirname( __FILE__ ) ); }
 if ( ! defined( 'RECALL_MASTERS_URL' ) ) { define( 'RECALL_MASTERS_URL', plugin_dir_url( __FILE__ ) ); }
