@@ -34,8 +34,9 @@ class Recall_Masters_Shortcodes {
 	 */
 	function recall_form_shortcode() {
 		ob_start();
-		$options = get_option( 'recall_masters_settings' );
+		$options   = get_option( 'recall_masters_settings' );
 		$permalink = get_permalink( $options['recall_masters_select_field_0'] );
+		$logo      = RECALL_MASTERS_URL . 'assets/images/logo.png';
 		?>
 		<h3><?php esc_html_e( $options['recall_masters_text_field_2'], 'recall_masters' ); ?></h3>
 		<p><?php esc_html_e( $options['recall_masters_text_field_3'], 'recall_masters' ); ?></p>
@@ -46,6 +47,7 @@ class Recall_Masters_Shortcodes {
 				<input type="hidden" name="action" value="recall_form">
 			</div>
 			<button type="submit" class="btn btn-primary vin-button"><?php esc_html_e( 'Check Recall Status', 'recall_masters' ); ?></button>
+			<span class="recall-masters-logo"><img src="<?php esc_html_e( $logo ); ?>" alt="Powered By Recall Masters" />
 		</form>
 		<div class="clearfix"></div>
 		<?php
@@ -61,9 +63,10 @@ class Recall_Masters_Shortcodes {
 	function recall_results_shortcode() {
 		ob_start();
 
-		$vin = wp_unslash( $_POST['vin'] );
+		$vin     = wp_unslash( $_POST['vin'] );
 		$options = get_option( 'recall_masters_settings' );
-		$url = 'https://app.recallmasters.com/api/v1/lookup/' . $vin . '/?format=json&user=' . $options['recall_masters_text_field_6'] . '';
+		$url     = 'https://app.recallmasters.com/api/v1/lookup/' . $vin . '/?format=json&user=' . $options['recall_masters_text_field_6'] . '';
+		$logo    = RECALL_MASTERS_URL . 'assets/images/logo.png';
 
 		$headers = array(
 			'timeout'   => 5,
@@ -82,6 +85,7 @@ class Recall_Masters_Shortcodes {
 		$recall_data_array = json_decode( wp_remote_retrieve_body( $response ), true );
 
 		?>
+		<!--Powered by Recall Masters-->
 		<div class="well">
 			<table class="table table-condensed table-hover">
 				 <thead>
@@ -141,6 +145,8 @@ class Recall_Masters_Shortcodes {
 							</div>
 							<div class="panel-footer">
 								<span class="label label-primary"><?php esc_html_e( 'OEM Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['oem_id'], 'recall_masters' ); ?></span> / <span class="label label-primary"><?php esc_html_e( 'NHTSA Code', 'recall_masters' ); ?>: <?php esc_html_e( $recall['nhtsa_id'], 'recall_masters' ); ?></span>
+								<span class="recall-masters-logo pull-right"><img src="<?php esc_html_e( $logo ); ?>" alt="Powered By Recall Masters" />
+								<div class="clearfix"></div>
 							</div>
 					</div>
 					<?php
@@ -148,8 +154,13 @@ class Recall_Masters_Shortcodes {
 			?>
 			<?php } else { ?>
 				<div class="alert alert-success" role="alert"><?php esc_html_e( $options['recall_masters_text_field_5'], 'recall_masters' ); ?></div>
+				<div class="panel-footer">
+					<span class="recall-masters-logo pull-right"><img src="<?php esc_html_e( $logo ); ?>" alt="Powered By Recall Masters" />
+					<div class="clearfix"></div>
+				</div>
 			<?php } ?>
 		</div>
+		<!--Powered by Recall Masters-->
 		<?php
 
 		return ob_get_clean();
